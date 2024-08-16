@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "f1";
+  src: url(/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "f2";
+  src: url(/A-Space\ Black\ Demo.otf);
+}
+.maincontainer {
+  /* overflow: hidden; */
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  border-radius: 10px;
+  height: 10px;
+  background-color:#1E1E41;
+  width: 8px; 
+}
+::-webkit-scrollbar-thumb {
+  background-color:#48297f; 
+  border-radius: 40px;
+
+}
+.bgimg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* object-fit: cover; */
+  z-index: -1;
+  /* object-fit: cover; */
+}
+
+.logocont {
+
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@keyframes float{
+  from { transform: translateY(0px); } 
+    50% { transform: translateY(5px); } 
+    to { transform: translateY(0px); }
+  }
+.astronaut img{
+  animation: float 3s linear infinite;
+
+  height: 94vh;
+}
+.logo {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  font-family: f2;
+  border-style: double;
+  border-color: aqua;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 4rem;
+  border-radius: 20px;
+}
+.logo img{
+  height: 15vh;
+}
+.aboutSection {
+  height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(90deg,#090915,#0D1221,#030207); */
+  /* background-image: url(/5037770_31633.jpg); */
+  background-size: 100%;
+  animation: zoomout linear forwards;
+  animation-timeline: view();
+  transform-origin: bottom;
+  animation-range: entry;
+  /* background-position: 0% 0%; */
+
+}
+
+/* @keyframes zoomout{
+    15% {opacity: 0; scale: 0.2;}
+    55% {opacity: 0.5; scale: 0.5;}
+    75% {opacity: 0.7; scale: 0.7;}
+    85% {scale: 0.8 ; opacity: 0.9;}
+    95% {scale: 1; opacity: 1;}
+  } */
+.aboutSection .txt-center {
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  font-family: f2;
+  font-weight: 300;
+
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+  color: white;
+}
+
+.span-txt {
+  /* font-family: f2; */
+  color: #AAE6FF;
+  
+}
+.text-center h1{
+  font-family: f2;
+  font-size: 2em;
+}
+
+
+.aboutSection .about-group {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  margin: 0 auto;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  /* background-image: url("/5037770_31633.jpg"); */
+  background-size: 100%;
+  /* background-position: 100% 35%; */
+  background-repeat: no-repeat;
+  background-image:url(/5044161_31755.jpg);
+  /* background-blend-mode: darken; */
+  /* backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 1px 10px #08CBFF;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* .aboutSection .about-group .img-box {
+ 
+  width: 500px;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  margin-left: -100px;
+} */
+
+
+/* .aboutSection  .about-group .left-sec {
+    overflow: hidden;
+  
+    margin: auto 6px;
+    margin-left: 0px;
+    width: 590px;
+    /* height: 520px; */
+/* background-image: url(/14455833_5477669.jpg); */
+/* border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 3px rgb(32, 120, 162);
+    border-radius: 10px;
+      */
+.aboutSection .about-group  img {
+  margin-left: -360px;
+  animation: roll 20s linear infinite;
+}
+
+@keyframes roll{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.aboutSection .about-group .right-sec {
+  flex: 1;
+  width: 603px;
+  height: 490px;
+  padding: 40px 10px;
+  color: #ffffff;
+  font-family: helvetica;
+
+
+}
+
+.aboutSection .about-group .right-sec p {
+  font-family: f1;
+  color: #80A7EC;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.aboutSection .about-group .right-sec h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.aboutSection .about-group .right-sec .info {
+  margin: 25px 0 15px 0;
+
+  line-height: 1.6rem;
+
+}
+
+.aboutSection .about-group .right-sec .info h1 {
+  margin-bottom: 7px;
+}
+
+.aboutSection .about-group .right-sec .info .title {
+  color: #AAE6FF;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.aboutSection .about-group .right-sec .info .date {
+  color: #fff;
+}
+.Tracks{
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(90deg,#000000,#0a085c); */
+ color: white;
+}
+.text-center{
+  text-align: center;
+  font-size: 30px;
+  font-family:helvetica;
+  text-transform: uppercase;
+  font-weight: lighter ;
+}
+.trackcontainer{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trackss{
+  background-image: url(/5037770_31633.jpg);
+  background-size: cover;
+  background-position: 5% 5%;
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  border-style: double;
+  width: 90%;
+  border-radius: 20px;
+    /* backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 1px 10px #08CBFF;
+}
+.trackimg{
+  overflow: hidden;
+}
+.trackimg img{
+  height: 100%;
+  margin-right: 9vw;
+  animation: roll1 20s linear infinite;
+}
+@keyframes roll1{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate3d(0deg);
+  }
+}
+.card {
+  font-family: f1;
+  width: 254px;
+  height: 200px;
+  /* background: #07182E; */
+  position: relative;
+  display: flex;
+  place-content: center;
+  text-align:center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  backdrop-filter: blur(8px);
+  z-index: 1;
+  color: white;
+  font-size: 1.5em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, #B026FF , #08CBFF);
+  height: 160%;
+  animation: rotBGimg 5s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background-image: url(/18106.jpg);
+  /* backdrop-filter: blur(10px); */
+  background-size: 100%;
+  inset: 5px;
+  border-radius: 20px;
+} 
+.cardcontainer{
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  display:flex;
+  width:150vw;
+  gap:20px;
+  flex-wrap: wrap;
+}
+.cardcontainer .card:nth-child(1)::after{
+  background-image: url(genai.jpg);
+}
+.cardcontainer .card:nth-child(2)::after{
+  background-image: url(4102879_971.jpg);
+}
+.cardcontainer .card:nth-child(3)::after{
+  background-image: url(devops.jpg);
+}
+.cardcontainer .card:nth-child(4)::after{
+  background-image: url(blochchain.jpg);
+}
+.cardcontainer .card:nth-child(5)::after{
+  background-image: url(cybersecurity.jpg);
+}
+.cardcontainer .card:nth-child(4)::after{
+  background-image: url(blochchain.jpg);
+}
+.cardcontainer .card:nth-child(6)::after{
+  background-image: url(opentrophy.jpg);}
+
+.timeline{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  /* font-size: 2em; */
+}
+.timelinebox img{
+  /* height: 70vh; */
+  /* border-style: double; */
+  border-radius: 20px;
+  /* width: 70%; */
+
+}
+.timelinebox{
+  backdrop-filter: blur(15px);
+  margin-top:50px;
+  height: 70vh;
+  /* border-radius: 50px; */
+  /* backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 1px 10px #08CBFF;
+  width: 90%;
+  border-style: double;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.timelinehead{
+  font-family: f2;
+  font-size: 5em;
+  text-align: center;
+  color: #fff ;
+  /* font-weight: 900; */
+}
+
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+
+/* .about{
+    background-image: url(/14455833_5477669.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 80vw;
+    border-style: double;
+    border-radius: 20px;
+    height: 70vh;
+} 
+.aboutcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.aboutimg{
+    height:10vh;
+
+} */
