@@ -4,14 +4,13 @@
 }
 @font-face {
   font-family: "f1";
-  src: url(/Poppins-SemiBold.ttf);
+  src: url(assests/fonts/Poppins-SemiBold.ttf);
 }
 @font-face {
   font-family: "f2";
-  src: url(/A-Space\ Black\ Demo.otf);
+  src: url(assests/fonts/A-Space\ Black\ Demo.otf);
 }
 .maincontainer {
-  /* overflow: hidden; */
   position: relative;
   height: 100vh;
   width: 100%;
@@ -70,24 +69,13 @@
 .aboutSection {
   height: 100vh;
   width: 100%;
-  /* background-image: linear-gradient(90deg,#090915,#0D1221,#030207); */
-  /* background-image: url(/5037770_31633.jpg); */
   background-size: 100%;
   animation: zoomout linear forwards;
   animation-timeline: view();
   transform-origin: bottom;
   animation-range: entry;
-  /* background-position: 0% 0%; */
 
 }
-
-/* @keyframes zoomout{
-    15% {opacity: 0; scale: 0.2;}
-    55% {opacity: 0.5; scale: 0.5;}
-    75% {opacity: 0.7; scale: 0.7;}
-    85% {scale: 0.8 ; opacity: 0.9;}
-    95% {scale: 1; opacity: 1;}
-  } */
 .aboutSection .txt-center {
   text-align: center;
   margin: 0;
@@ -116,14 +104,12 @@
   width: 90%;
   height: 70vh;
   margin: 0 auto;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  /* background-image: url("/5037770_31633.jpg"); */
+
   background-size: 100%;
-  /* background-position: 100% 35%; */
+
   background-repeat: no-repeat;
-  background-image:url(/5044161_31755.jpg);
-  /* background-blend-mode: darken; */
-  /* backdrop-filter: blur(5px); */
+  background-image:url(assests/imgs/about_bg.jpg);
+
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   box-shadow: 0 1px 10px #08CBFF;
@@ -131,19 +117,6 @@
   align-items: center;
   overflow: hidden;
 }
-
-/* .aboutSection .about-group .img-box {
- 
-  width: 500px;
-  height: 70vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 50%;
-  margin-left: -100px;
-} */
 
 
 /* .aboutSection  .about-group .left-sec {
@@ -239,7 +212,7 @@
   align-items: center;
 }
 .trackss{
-  background-image: url(/5037770_31633.jpg);
+  background-image: url(assests/imgs/tracks_bg.jpg);
   background-size: cover;
   background-position: 5% 5%;
   display: flex;
@@ -313,7 +286,7 @@
 .card::after {
   content: '';
   position: absolute;
-  background-image: url(/18106.jpg);
+  background-image: url(assests/imgs/cybersecurity_bg.jpg);
   /* backdrop-filter: blur(10px); */
   background-size: 100%;
   inset: 5px;
@@ -329,25 +302,22 @@
   flex-wrap: wrap;
 }
 .cardcontainer .card:nth-child(1)::after{
-  background-image: url(genai.jpg);
+  background-image: url(assests/imgs/genai.jpg);
 }
 .cardcontainer .card:nth-child(2)::after{
-  background-image: url(4102879_971.jpg);
+  background-image: url(assests/imgs/webdev_bg.jpg);
 }
 .cardcontainer .card:nth-child(3)::after{
-  background-image: url(devops.jpg);
+  background-image: url(assests/imgs/devops.jpg);
 }
 .cardcontainer .card:nth-child(4)::after{
-  background-image: url(blochchain.jpg);
+  background-image: url(assests/imgs/blochchain.jpg);
 }
 .cardcontainer .card:nth-child(5)::after{
-  background-image: url(cybersecurity.jpg);
-}
-.cardcontainer .card:nth-child(4)::after{
-  background-image: url(blochchain.jpg);
+  background-image: url(assests/imgs/cybersecurity.jpg);
 }
 .cardcontainer .card:nth-child(6)::after{
-  background-image: url(opentrophy.jpg);}
+  background-image: url(assests/imgs/opentrophy.jpg);}
 
 .timeline{
   display: flex;
