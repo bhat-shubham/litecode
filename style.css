@@ -317,10 +317,11 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 15px;
   }
   
   .trackss {
-    background-image: url(5037770_31633.jpg);
+    background-image: url(img/aboutbg.jpg);
     background-size: cover;
     background-position: 5% 5%;
     display: flex;
