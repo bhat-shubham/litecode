@@ -11,7 +11,7 @@
     border-radius: 10px;
     height: 10px;
     background-color: #1E1E41;
-    width: 8px;
+    width: 10px;
   }
   
   ::-webkit-scrollbar-thumb {
@@ -25,7 +25,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+ position: relative;
 }
 
 @font-face {
@@ -71,22 +71,13 @@ body {
 
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(193, 193, 193, 0.1);
-    z-index: -1;
-}
+
 
 .hero nav {
     width: 90%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+ 
     align-items: center;
     justify-content: space-between;
     background: rgba(15, 15, 15, 0.25);
@@ -116,6 +107,37 @@ ul li a {
 ul li a:hover {
     color: aqua;
 }
+
+.side-nav{
+    display: none;
+    position: relative;
+    
+}
+
+#sidebar-active{
+    display: none;
+} 
+.close-sidebar-button{
+  display: none;
+}
+
+/* .side-nav .links-container{
+    position: absolute;
+    right: 0;top: 0;
+    width: 300px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1313;
+    z-index: 1;
+} */
+
+
+
+
+
+
+
 
 
 .hero-logo {
@@ -215,7 +237,7 @@ ul li a:hover {
 
 /* **************************about***************************** */
 .about-group,
-.track-container,
+.trackcontainer,
 .timelinebox,
 .prize-container,
 .team .team-row,
@@ -269,7 +291,7 @@ ul li a:hover {
     color: #fff;
     /* font-weight: 500; */
     font-size: 19px;
-    font: ;
+  
 }
 
 .about .about-group .right-sec h1 {
@@ -300,119 +322,13 @@ ul li a:hover {
 }
 
 /* **********************Tracks*******************************/
-.trackssection{
-    backdrop-filter: blur(5px);
 
-}
-.track-container {
-    background-image: url(img/trackbg.jpg);
-    justify-content: center;
-    height: auto;
+ 
 
-}
+  
 
-.trackcontainer {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
   
-  .trackss {
-    background-image: url(5037770_31633.jpg);
-    background-size: cover;
-    background-position: 5% 5%;
-    display: flex;
-    justify-content: space-between;
-    height: 70vh;
-    border-style: double;
-    width: 90%;
-    border-radius: 20px;
-    /* backdrop-filter: blur(5px); */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 1px 10px #08CBFF;
-    overflow: hidden;
-  }
-  
-  .track {
-    overflow: hidden;
-
-  }
-  
-  .trackss img {
-    height: 100%;
-    margin-right: -200px;
-    animation: roll 25s linear infinite;
-   
-   
-  }
-
-  .cardcontainer{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    gap: 20px;
-    flex-wrap: wrap;
-   
-  }
-  
-  @keyframes roll {
-    0% {
-      transform: rotate(360deg);
-    }
-  
-    100% {
-      transform: rotate3d(0deg);
-    }
-  }
-  
-  .card {
-    text-align: center;
-    width: 254px;
-    height: 190px;
-    /* background-color:(15, 15, 15, 0.25); */
-    position: relative;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 20px;
-    
-  }
-
-
-  .cardcontainer .card:nth-child(1)::after{
-    background-image: url(img/genai.jpg);
-  }
-  .cardcontainer .card:nth-child(2)::after{
-    background-image: url(img/cybersecurity.jpg);
-  }
-  .cardcontainer .card:nth-child(3)::after{
-    background-image: url(img/blochchain.jpg);
-  }
-  .cardcontainer .card:nth-child(4)::after{
-    background-image: url(img/webdev_bg.jpg);
-  }
-  .cardcontainer .card:nth-child(5)::after{
-    background-image: url(img/devops.jpg);
-  }
-  .cardcontainer .card:nth-child(6)::after{
-    background-image: url(img/opentrophy.jpg);
-  }
-  
-  .card h2 {
-    font-family: poppins;
-    z-index: 1;
-    color: white;
-    backdrop-filter: blur(5px);
-    font-size: 1.5em;
-  }
-  
-  .card::before {
+  /* .card::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -422,29 +338,11 @@ ul li a:hover {
     transition: all 0.2s linear;
   }
   
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
+ 
   
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
- .card::after {
-    /* height: 200px; */
-    content: '';
-    position: absolute;
-    background-size: cover;
-    inset: 5px;
-    border-radius: 15px;
-    
-  }
 
-  .trackimg{
-    width: 100%;
-  }
+
+/* ***************************timeline****************** */
 .timelinebox {
     overflow-x: scroll;
     backdrop-filter: blur(10px);
@@ -896,17 +794,11 @@ footer  ul li a img{
         padding: 20px;
     }
 
-    .track-container {
-        height: auto;
-        margin: auto;
-    }
+  
+    
+    
+    
 
-    .trackss {
-        height: auto;
-        flex-direction: column;
-        margin: auto;
-    }
-}
 
 @media screen and (max-width: 992px) {
     .hero .row {
@@ -924,7 +816,8 @@ footer  ul li a img{
         flex-direction: column;
     }
 
-    .about .about-group img {
+    .about .about-group img ,
+    .trackss img{
        display: none;
     }
 
@@ -943,7 +836,7 @@ footer  ul li a img{
     }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .hero nav {
         flex-direction: column;
         align-items: center;
@@ -1069,4 +962,101 @@ footer  ul li a img{
       font-size: 1em;
   }
 }
-  
+   */
+
+   @media screen and (max-width: 450px) {
+   nav{
+    display: none;
+   }
+   
+    .side-nav{
+       display: flex;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       background-color: #83bac0;
+       backdrop-filter: blur(10px);
+       align-items: center;
+       justify-content: space-between;
+       width: 100%;
+       height: 10vh;
+       padding: 0 20px;
+       z-index: 1;
+       
+    }
+
+    .side-nav .logo{
+        display: flex;
+    }
+
+    .side-navlogo img {
+        width: 50px;
+        height: 50px;
+        margin: 5px 4px;
+    }
+
+    .side-nav nav{
+        display: block;
+    }
+
+    .menu-bar{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+     .side-nav .links-container{
+        position: absolute;
+        right: 0;top: 0;
+        width: 200px;
+
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #1f1313;
+        z-index: 1;
+    }
+    .close-sidebar-button{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px 2px;
+    }
+
+    .side-nav .links-container ul{
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+
+    .side-nav .links-container ul a{
+       width: 100%;
+       padding: 3px 5px;
+       margin: 4px;
+       display: block;
+       cursor: pointer;
+    }
+
+    .side-nav .links-container ul li a:hover{
+     color: #c78c0b;
+    }
+
+
+    footer{
+        display: none;
+    }
+    .txt-center h1{
+        font-size: 3rem;
+    }
+
+    .trackss img{
+        display: none;
+    }
+    .hero-logo{
+        margin: 0;
+    }
+   }
+}
