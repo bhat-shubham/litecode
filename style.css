@@ -89,11 +89,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    /* border-style:groove; */
     background: rgba(15, 15, 15, 0.25);
-    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-    backdrop-filter: blur(4px);
-    /* border-radius: 20px; */
+   backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     font-family: Anek Devanagari;
@@ -152,7 +149,7 @@ ul li a:hover {
     border-radius: 20px;
     backdrop-filter: blur(5px);
     line-height: 1;
-    /* background-color: rgb(168, 154, 154); */
+    
 
 }
 
@@ -179,7 +176,7 @@ ul li a:hover {
 }
 
 .hero .row .left-sec .location {
-    /* width: 10px; */
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,19 +212,6 @@ ul li a:hover {
 
 }
 
-@keyframes float {
-    from {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(5px);
-    }
-
-    to {
-        transform: translateY(0px);
-    }
-}
 
 /* **************************about***************************** */
 .about-group,
@@ -285,6 +269,7 @@ ul li a:hover {
     color: #fff;
     /* font-weight: 500; */
     font-size: 19px;
+    font: ;
 }
 
 .about .about-group .right-sec h1 {
@@ -331,6 +316,7 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   
   .trackss {
@@ -347,16 +333,20 @@ ul li a:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 1px 10px #08CBFF;
-  }
-  
-  .trackimg {
     overflow: hidden;
   }
   
-  .trackimg img {
+  .track {
+    overflow: hidden;
+
+  }
+  
+  .trackss img {
     height: 100%;
-    margin-right: 20vw;
-    animation: roll1 20s linear infinite;
+    margin-right: -200px;
+    animation: roll 25s linear infinite;
+   
+   
   }
 
   .cardcontainer{
@@ -364,12 +354,13 @@ ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 255vw;
+    width: 70%;
     gap: 20px;
     flex-wrap: wrap;
+   
   }
   
-  @keyframes roll1 {
+  @keyframes roll {
     0% {
       transform: rotate(360deg);
     }
@@ -393,17 +384,6 @@ ul li a:hover {
     
   }
 
-  /* .card::after {
-    content: '';
-    
-    position: absolute;
-    background-image: url();
-    background-size: 100%;
-    inset: 5px;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  } */
 
   .cardcontainer .card:nth-child(1)::after{
     background-image: url(img/genai.jpg);
@@ -479,7 +459,7 @@ ul li a:hover {
 }
 
 /* **************prize************************** */
-.prize-pool {}
+
 
 .prize-container {
     justify-content: space-between;
@@ -558,6 +538,7 @@ ul li a:hover {
 .team .team-row .row1 {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
 
@@ -628,14 +609,7 @@ ul li a:hover {
     color: #1DD8FE;
 }
 
-/* .card {
-    width: 225px;
-    height: 270px;
-    background: #f3f3;
-    border-radius: 15px;
-    box-shadow: 1px 5px 60px 0px #100a;
-    padding: 10px 5px;
-  } */
+
   
   .card .card-border-top {
     width: 60%;
@@ -707,7 +681,8 @@ ul li a:hover {
     background-image:none ;
   text-align: center;
   flex-direction: column;
-  /* background-color: #535353; */
+  height: auto;
+  padding: 20px;
  backdrop-filter: blur(7px);
 }
 
@@ -761,7 +736,7 @@ ul li a:hover {
     flex-wrap: wrap;
     align-items: flex-start;
     border-radius: 7px;
-    height: 65vh;
+    height: auto;
     align-items: center;
     font-family: sans-serif;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -860,6 +835,30 @@ ul li a:hover {
   
   
   }
+  footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer  ul li a {
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 600;
+    margin: 10px 20px;
+    color: #ffffff;
+}
+
+footer  ul li a img{
+  width: 30px;
+  height: 30px;
+}
+
+ footer  ul li a:hover {
+    color: aqua;
+}
 
   
   
@@ -873,4 +872,201 @@ ul li a:hover {
     width: 100%;
   }
   
+
+  @media screen and (max-width: 1200px) {
+    .hero .row .left-sec h1 {
+        font-size: 3rem;
+    }
+
+    .hero .row .left-sec p {
+        font-size: 18px;
+    }
+
+    .hero .row .left-sec .location {
+        font-size: 18px;
+    }
+
+    .hero .row .left-sec .btns img {
+        width: 130px;
+    }
+
+    .about .about-group .right-sec {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .track-container {
+        height: auto;
+        margin: auto;
+    }
+
+    .trackss {
+        height: auto;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero .row {
+        flex-direction: column;
+    }
+
+  
+
+    .hero .row .left-sec {
+        width: 100%;
+    }
+
+  
+    .about .about-group {
+        flex-direction: column;
+    }
+
+    .about .about-group img {
+       display: none;
+    }
+
+    .about .about-group .right-sec p {
+      font-size: 15px;
+    }
+
+    .cardcontainer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li a {
+        margin: 10px 0;
+    }
+
+    .hero .row .left-sec h1 {
+        font-size: 3rem;
+    }
+
+    .hero .row .left-sec .running-txt {
+        font-size: 1.5rem;
+    }
+
+    .hero .row .left-sec p {
+        font-size: 16px;
+    }
+
+    .hero .row .left-sec .btns img {
+        width: 100px;
+    }
+
+    .about .about-group .right-sec p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero .row .left-sec h1 {
+        font-size: 2rem;
+    }
+
+    .hero .row .left-sec .running-txt {
+        font-size: 1.2rem;
+    }
+
+    .hero .row .left-sec p {
+        font-size: 14px;
+    }
+
+    .hero .right-sec img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .about-group img {
+        height: 150px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .trackss {
+      height: 50vh;
+  }
+  .cardcontainer {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .trackss {
+      flex-direction: column;
+      height: auto;
+  }
+  .trackss img {
+      width: 80px;
+      margin-right: 0;
+  }
+  .cardcontainer {
+      width: 100%;
+      flex-direction: column;
+  }
+  .card {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .track-container {
+      padding: 10px;
+  }
+  .trackss img {
+      width: 60px;
+  }
+  .card h2 {
+      font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .trackss img {
+      width: 50px;
+  }
+  .card h2 {
+      font-size: 1em;
+  }
+}
   
