@@ -42,6 +42,10 @@ body {
     font-family: poppins;
     src: url(font/Poppins-SemiBold.ttf);
 }
+@font-face {
+    font-family: PRIZES;
+    src: url(font/CuriousTrackDemoRegular.ttf);
+}
 
 .section {
     width: 100%;
@@ -62,12 +66,13 @@ body {
 }
 
 .txt-center {
+    text-shadow: 1px 0px 10px #bb14e0;
     text-align: center;
     font-size: 3em;
     margin: 10px 0;
     font-family: aquirebold;
     margin-bottom: 20px;
-    color: #fff;
+    color: #0AB5D2;
 
 }
 
@@ -513,30 +518,57 @@ ul li a:hover {
 
 
 .prize-container {
-    justify-content: space-between;
+
+    justify-content: center;
     padding: 5px 25px;
     background-image: none;
     flex-wrap: wrap;
-   backdrop-filter: blur(7px);
+    background-image: url(img/prizesbgf.png);
+    background-size:cover;
+    background-position:50% 50% ;
+   /* backdrop-filter: blur(7px); */
 }
 
 .prize-container .price-txt {
+    animation: down 4s infinite ease-in-out;
+
     width: 500px;
     height: 400px;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
 }
-
-.prize-container .price-txt h1 {
-    padding: 0;
-    font-size: 5rem;
-    color: #fff;
-    font-family: Helvetica;
+.LK{
+    font-family: aquirebold;
 }
+.prize-container .price-txt h1 {
+    animation: glow 8s linear infinite;
+    padding: 0;
+    font-size: 6rem;
+    color: #B355C7;
+    letter-spacing: 2px;
+    font-family: PRIZES;
+}
+@keyframes glow {
+    0%,40%,61%,70%{
+      color:#0e3742;
+      text-shadow: none;
+    }
+    15%,41.5%,61.2%,90.1%,100%{
+      color: #fff;
+      text-shadow: 0 0 10px #B355C7,
+      0 0 20px #B355C7,
+      0 0 40px #B355C7,
+      0 0 80px #B355C7,
+      0 0 160px #B355C7;
+  
+  
+    }
+    
+  }
 .span-txt{
     color: #1DD8FE;
     /* font-family: poppins; */
@@ -549,7 +581,7 @@ ul li a:hover {
 
 .prize-container .price-txt h4,
 .prize-container .price-txt p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: aquirebold;
 
 }
 
@@ -557,7 +589,8 @@ ul li a:hover {
     /* padding-left: 100px; */
     font-size: 3rem;
     text-align: center;
-    font-family: monospace;
+    font-family: aquirebold;
+    font-weight: 900;
     color: #FF8C00;
 }
 
@@ -571,7 +604,11 @@ ul li a:hover {
     border-radius: 10px;
 
 }
-
+@keyframes down{
+    from { transform: translateY(0px); } 
+    50% { transform: translateY(10px); } 
+    to { transform: translateY(0px); }
+  }
 /* ********************team******************************* */
 
 
