@@ -191,12 +191,25 @@ ul li a:hover {
     width: 30px;
     
 }
+.hero .row .left-sec .location p {
+    margin-top: 15px;
+    
+}
+.lower-box{
+    display: flex;
+    align-items: center;
+}
+
+.sec-margin{
+    margin: 0 110px;
+}
 
 .hero .row .left-sec .btns {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin: 0 20px;
    
 }
 .partner-button button {
@@ -208,6 +221,7 @@ ul li a:hover {
     font-weight: 400;
     border-radius: 6px;
     cursor: pointer;
+   
   }
 
 .partner-button button:hover{
@@ -225,11 +239,11 @@ ul li a:hover {
 }
 
 
-.hero .right-sec img {
+/* .hero .right-sec img {
     width: 500px;
     animation: float 4s linear infinite;
 
-}
+} */
 
 
 /* **************************about***************************** */
