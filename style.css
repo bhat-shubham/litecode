@@ -847,7 +847,7 @@ ul li a:hover {
     margin-top: 2rem;
     padding: 10px 15px;
     cursor: pointer;
-    background-color:rgba(115, 15, 190, 0.5);
+    background-color:rgba(115, 25, 190,0.8);
     backdrop-filter: blur(4px);
     border-radius: 10px;
   
@@ -858,6 +858,7 @@ ul li a:hover {
     justify-content: space-between;
     align-items: center;
     color: #E292E7;
+    font-family: poppins;
   }
   
   .question h3 {
