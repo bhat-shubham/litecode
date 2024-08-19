@@ -795,7 +795,7 @@ ul li a:hover {
     margin-top: 2rem;
     padding: 10px 15px;
     cursor: pointer;
-    background-color: rgba(33, 33, 33, 0.8);
+    background-color:rgba(115, 15, 190, 0.5);
     backdrop-filter: blur(4px);
     border-radius: 10px;
   
