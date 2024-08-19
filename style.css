@@ -46,10 +46,6 @@ body {
     font-family: PRIZES;
     src: url(font/CuriousTrackDemoRegular.ttf);
 }
-@font-face {
-    font-family: PRIZES1;
-    /* src: url(font/Copal\ Std\ SolidNEW.otf); */
-}
 
 .section {
     width: 100%;
