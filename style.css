@@ -660,7 +660,7 @@ ul li a:hover {
 }
 .team .team-row .user {
     width: 225px;
-    height: 270px;
+    height: 300px;
     border: 2px dashed #F9D77E;
     border-radius: 9px;
     box-shadow: 0px 5px 8px #F9D77E;
@@ -668,7 +668,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
+    padding: 0px 10px;
     margin: 15px 10px;
     line-height: 1.4;
     background-color: rgba(15, 115, 190, 0.25);
@@ -677,6 +677,30 @@ ul li a:hover {
     scale: 1.1;
     transition-duration: 0.5s;
 }
+.team .team-row .user .user-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* width: 30px;
+    height: 50px; */
+   
+}
+.team .team-row .user .user-link img{
+    margin: auto;
+    border-style: none;
+    height: 30px;
+    opacity: 0.5;
+    /* width: 100%; */
+}
+.team .team-row .user .user-link img:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+/* .user-link{
+    width: 10PX;
+} */
+
 .team .team-row .user img {
     margin: auto;
     width: 150px;
@@ -942,7 +966,6 @@ ul li a:hover {
     margin: 10px;
   }
   footer .text-center img:hover{
-   scale
     
   }
   
@@ -1010,7 +1033,7 @@ ul li a:hover {
     .about .about-group img,
     .track .trackimg im {
        display: none;
-       font: ;
+       /* font: ; */
     }
 
     .about .about-group .right-sec p {
