@@ -32,7 +32,10 @@ body {
     font-family: montserrt;
     src: url(/font/Montserrat-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: devf_font;
+    src: url(/font/CorbertCondensed-Bold.otf);
+}
 @font-face {
     font-family: aquirebold;
     src: url(font/AquireBold-8Ma60.otf);
@@ -164,8 +167,26 @@ ul li a:hover {
     font-family: aquirebold;
     margin: 0;
     color: #0AB5D2;
+    text-shadow: 1px 0px 10px #bb14e0;
+    animation: glow1 8s infinite;
 }
-
+@keyframes glow1 {
+    0%,40%,61%,70%{
+      color:#0AB5D2;
+      text-shadow: none;
+    }
+    15%,41.5%,61.2%,90%,100%{
+      color: #fff;
+      text-shadow: 0 0 10px #B355C7,
+      0 0 20px #B355C7,
+      0 0 40px #B355C7,
+      0 0 80px #B355C7,
+      0 0 160px #B355C7;
+  
+  
+    }
+    
+  }
 .hero .row .left-sec .running-txt {
     font-size: 2rem;
     color: #00D8ED;
@@ -197,7 +218,7 @@ ul li a:hover {
     
 }
 .hero .row .left-sec .location p {
-    margin-top: 15px;
+    margin-top: 8px;
     
 }
 .lower-box{
@@ -208,23 +229,32 @@ ul li a:hover {
 .sec-margin{
     margin: 0 110px;
 }
-
 .hero .row .left-sec .btns {
+    gap: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     margin: 0 20px;
    
 }
 .partner-button button {
-    padding: 4px 13px;
-    background-color: transparent;
-    border: 2px solid #0e0d0d;
+    text-align: center;
+    height: 44px; 
+    width:312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 14px 13px; */
+    background-color: #0AB5D2;
+    border: 2px solid #0AB5D2;
     color: #fff;
     font-size: 1.5rem;
-    font-weight: 400;
-    border-radius: 6px;
+    font-family: devf_font;
+    /* font-weight: 900; */
+    margin: 0px;
+    padding: 0px;
+    border-radius: 4px;
     cursor: pointer;
    
   }
