@@ -171,11 +171,11 @@ ul li a:hover {
     animation: glow1 8s infinite;
 }
 @keyframes glow1 {
-    0%,40%,61%,70%{
+    0%,61%{
       color:#0AB5D2;
       text-shadow: none;
     }
-    15%,41.5%,61.2%,90%,100%{
+    15%,41.5%,90%,100%{
       color: #fff;
       text-shadow: 0 0 10px #B355C7,
       0 0 20px #B355C7,
@@ -257,10 +257,10 @@ ul li a:hover {
    
   }
 
-.partner-button button:hover{
+/* .partner-button button:hover{
     color: #1E1E41;
     background-color: #fff;
-}
+} */
 
 .hero .row .left-sec .btns img {
     width: 160px;
@@ -804,7 +804,7 @@ ul li a:hover {
 
 /* ************sponsers******************************** */
 .Partners .sp-row p{
-    font-family: sans-serif;
+    font-family: poppins;
     color: #FFF;
     width: 70%;
     font-size: 1.5rem;
