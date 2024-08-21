@@ -34,7 +34,10 @@ body {
     font-family: montserrt;
     src: url(/font/Montserrat-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: devf_font;
+    src: url(/font/CorbertCondensed-Bold.otf);
+}
 @font-face {
     font-family: aquirebold;
     src: url(font/AquireBold-8Ma60.otf);
@@ -171,8 +174,26 @@ ul li a:hover {
     font-family: aquirebold;
     margin: 0;
     color: #0AB5D2;
+    text-shadow: 1px 0px 10px #bb14e0;
+    animation: glow1 8s infinite;
 }
-
+@keyframes glow1 {
+    0%,40%,61%,70%{
+      color:#0AB5D2;
+      text-shadow: none;
+    }
+    15%,41.5%,61.2%,90%,100%{
+      color: #fff;
+      text-shadow: 0 0 10px #B355C7,
+      0 0 20px #B355C7,
+      0 0 40px #B355C7,
+      0 0 80px #B355C7,
+      0 0 160px #B355C7;
+  
+  
+    }
+    
+  }
 .hero .row .left-sec .running-txt {
     font-size: 2rem;
     color: #00D8ED;
@@ -205,8 +226,13 @@ ul li a:hover {
 }
 
 .hero .row .left-sec .location p {
+<<<<<<< HEAD
     margin-top: 15px;
 
+=======
+    margin-top: 8px;
+    
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 }
 
 .lower-box {
@@ -214,27 +240,47 @@ ul li a:hover {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .sec-margin {
     margin: 0 110px;
 }
 
+=======
+/* .sec-margin{
+  
+} */
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 .hero .row .left-sec .btns {
+    gap: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     margin-top: 20px;
     margin: 0 20px;
 
+=======
+   margin-top: 15px;
+   
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 }
 
 .partner-button button {
-    padding: 4px 13px;
-    background-color: transparent;
-    border: 2px solid #0e0d0d;
+    
+    height: 44px; 
+    width:312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 14px 13px; */
+    background-color: #3770FF;
+    border: 2px solid #3770FF;
     color: #fff;
     font-size: 1.5rem;
-    font-weight: 400;
-    border-radius: 6px;
+    font-family: devf_font;
+    /* font-weight: 900; */
+   
+    border-radius: 4px;
     cursor: pointer;
 
 }
@@ -702,7 +748,7 @@ h1 span {
 
 .team .team-row .user {
     width: 225px;
-    height: 270px;
+    height: 300px;
     border: 2px dashed #F9D77E;
     border-radius: 9px;
     box-shadow: 0px 5px 8px #F9D77E;
@@ -710,7 +756,7 @@ h1 span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
+    padding: 0px 10px;
     margin: 15px 10px;
     line-height: 1.4;
     background-color: rgba(15, 115, 190, 0.25);
@@ -720,6 +766,32 @@ h1 span {
     scale: 1.1;
     transition-duration: 0.5s;
 }
+<<<<<<< HEAD
+=======
+.team .team-row .user .user-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* width: 30px;
+    height: 50px; */
+   
+}
+.team .team-row .user .user-link img{
+    margin: auto;
+    border-style: none;
+    height: 30px;
+    opacity: 0.5;
+    /* width: 100%; */
+}
+.team .team-row .user .user-link img:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+/* .user-link{
+    width: 10PX;
+} */
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 
 .team .team-row .user img {
     margin: auto;
@@ -863,8 +935,13 @@ h1 span {
 /* ************************FAQ's*********************** */
 .FAQ {
     height: auto;
+<<<<<<< HEAD
    
     padding: 0px;
+=======
+    margin-bottom:5rem;
+    padding: 5px;
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 }
 
 .FAQ .row {
@@ -898,7 +975,7 @@ h1 span {
     margin-top: 2rem;
     padding: 10px 15px;
     cursor: pointer;
-    background-color: rgba(33, 33, 33, 0.8);
+    background-color:rgba(115, 25, 190,0.8);
     backdrop-filter: blur(4px);
     border-radius: 10px;
 
@@ -909,6 +986,7 @@ h1 span {
     justify-content: space-between;
     align-items: center;
     color: #E292E7;
+<<<<<<< HEAD
 }
 
 .question h3 {
@@ -919,6 +997,19 @@ h1 span {
 
 .question .down-arrow {
 
+=======
+    font-family: poppins;
+  }
+  
+  .question h3 {
+    font-size: 1.2rem;
+  
+  
+  }
+  
+  .question .down-arrow {
+  
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
     display: flex;
     align-items: center;
     justify-content: center;
@@ -945,11 +1036,19 @@ h1 span {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
+<<<<<<< HEAD
     font-size: 1rem;
 
 }
 
 .faq-box.active .answer {
+=======
+    font-size: 1.2rem;
+  
+  }
+  
+  .faq-box.active .answer {
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
     max-height: 300px;
     transition: max-height 1s ease-in-out;
 
@@ -966,6 +1065,10 @@ footer {
     height: 20vh;
     background-color: rgba(33, 33, 33, 0.8);
     backdrop-filter: blur(4px);
+<<<<<<< HEAD
+=======
+    padding: 10px 0;
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
     font-family: sans-serif;
     color: #fff;
     margin-bottom: 0;
@@ -982,15 +1085,33 @@ footer .text-center {
     text-align: center;
 }
 
+<<<<<<< HEAD
 footer .text-center h1 {
     font-size: 1rem;
 }
+=======
+  footer .text-center h1{
+    font-size: 1.2rem;
+  }
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 
 footer .text-center img {
     width: 30px;
     height: 30px;
     margin: 10px;
+<<<<<<< HEAD
 }
+=======
+  }
+  footer .text-center img:hover{
+    
+  }
+  
+  
+  
+ 
+  
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
 
 footer .text-center img:hover {
     scale
@@ -1060,8 +1181,13 @@ footer .text-center img:hover {
 
     .about .about-group img,
     .track .trackimg im {
+<<<<<<< HEAD
         display: none;
 
+=======
+       display: none;
+       /* font: ; */
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
     }
 
     .about .about-group .right-sec p {
@@ -1359,6 +1485,7 @@ footer .text-center img:hover {
         padding: 0 4px;
     }
 
+<<<<<<< HEAD
     footer {
         padding: 10px;
         height: auto;
@@ -1368,3 +1495,10 @@ footer .text-center img:hover {
         font-size: 10px;
     }
 }
+=======
+footer .text-center h1{
+    font-size: 1rem;
+}
+}
+  
+>>>>>>> bc118a0dc098c56db872097215d154889c2f9ec0
