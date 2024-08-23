@@ -513,7 +513,7 @@ color: #FFF;
 }
 
 .card-container .track-card:nth-child(6)::after {
-    background-image: url(img/opentrophy.jpg);
+    background-image: url(img/opentrophy.webp);
 }
 
 
