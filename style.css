@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -117,7 +115,7 @@ body {
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
-    font-family: Anek Devanagari;
+    font-family: poppins;
     box-shadow: 0 1px 10px #08CBFF;
 }
 
@@ -1386,6 +1384,9 @@ footer .text-center img {
 }
 
 @media screen and (max-width: 450px) {
+    body{
+        background-image: url(img/bg-mobile.jpg);
+    }
     .section {
         padding: 20px 0px;
     }
@@ -1504,7 +1505,9 @@ footer .text-center img {
 
     }
 
+
     .about .about-group {
+        background-image: url(img/aboutbgmobile.jpg);
         height: auto;
     }
 
@@ -1559,7 +1562,10 @@ footer .text-center img {
     .timelinebox {
         height: 42vh;
     }
+    .prize-container {
+        background-image: url(img/prizesbgmobile.jpg);
 
+    }
     .Partners .sp-row p {
         font-size: 1.5rem;
         width: 100%;
