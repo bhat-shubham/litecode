@@ -178,16 +178,24 @@ body {
 
 }
 
-.hero .row .left-sec h1 {
+/* .hero .row .left-sec h1 { */
+    /* height: 100px; 
     font-size: 6rem;
     letter-spacing: 5px;
     font-family: aquirebold;
     margin: 0;
     color: #0AB5D2;
     text-shadow: 1px 0px 10px #bb14e0;
+    animation: glow1 8s infinite; */
+.first-txt{
+    margin: 0px 50px;
+    /* border-style: double; */
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    height: 200px;
     animation: glow1 8s infinite;
-}
 
+}
 @keyframes glow1 {
 
     0%,
@@ -220,6 +228,7 @@ body {
     color: #00D8ED;
     font-weight: 600;
     margin: 10px 0;
+    font-family: poppins;
 
 }
 
