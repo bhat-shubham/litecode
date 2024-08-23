@@ -1354,6 +1354,7 @@ footer .text-center img {
     }
 
     .hero .row .left-sec h1 {
+        animation: none;
         font-size: 2rem;
     }
 
@@ -1524,13 +1525,19 @@ footer .text-center img {
 
     .card-container .track-card {
         width: 46%;
+
         height: 10em;
     }
 
     .card-container .track-card::after {
+        border: 5px solid #48297f ;
         content: "";
         width: 85%;
     }
+    .card-container .track-card::before {
+        animation: none;
+        display:none;}
+
 
     .card-container {
         padding: 0;
