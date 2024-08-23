@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(img/bg.jpg);
+    background-image: url(img/bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ color: #FFF;
     background-size: cover;
 
     background-repeat: no-repeat;
-    background-image: url(img/aboutbg.jpg);
+    background-image: url(img/aboutbg.webp);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 1px 10px #08CBFF;
@@ -396,7 +396,7 @@ color: #FFF;
 }
 
 .track-container {
-    background-image: url(img/trackbg.jpg);
+    background-image: url(img/trackbg.webp);
     justify-content: center;
     height: auto;
 
@@ -493,23 +493,23 @@ color: #FFF;
 }
 
 .card-container .track-card:nth-child(1)::after {
-    background-image: url(img/genai.jpg);
+    background-image: url(img/genai.webp);
 }
 
 .card-container .track-card:nth-child(2)::after {
-    background-image: url(img/devops.jpg);
+    background-image: url(img/devops.webp);
 }
 
 .card-container .track-card:nth-child(3)::after {
-    background-image: url(img/blochchain.jpg);
+    background-image: url(img/blochchain.webp);
 }
 
 .card-container .track-card:nth-child(4)::after {
-    background-image: url(img/webdev_bg.jpg);
+    background-image: url(img/webdev_bg.webp);
 }
 
 .card-container .track-card:nth-child(5)::after {
-    background-image: url(img//cybersecurity.jpg);
+    background-image: url(img//cybersecurity.webp);
 }
 
 .card-container .track-card:nth-child(6)::after {
