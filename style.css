@@ -191,7 +191,6 @@ body {
 }
 
 @keyframes glow1 {
-<<<<<<< HEAD
 
     0%,
     40%,
@@ -214,21 +213,6 @@ body {
             0 0 160px #B355C7;
 
 
-=======
-    0%,61%{
-      color:#0AB5D2;
-      text-shadow: none;
-    }
-    15%,41.5%,90%,100%{
-      color: #fff;
-      text-shadow: 0 0 10px #B355C7,
-      0 0 20px #B355C7,
-      0 0 40px #B355C7,
-      0 0 80px #B355C7,
-      0 0 160px #B355C7;
-  
-  
->>>>>>> 022011381ec5c1d1e23834a4853a2e30008522f8
     }
 
 }
@@ -276,54 +260,46 @@ body {
 
 
 .hero .row .left-sec .btns {
-    gap: 70px;
+    gap: 15px;
     display: flex;
 
     align-items: center;
     margin-top: 15px;
     flex-wrap: wrap;
-    /* background-color: aliceblue; */
+   
     justify-content: center;
 
 }
-
 .partner-button button {
-
-    height: 44px;
-    width: 312px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 14px 13px; */
-    background-color: #3770FF;
-    border: 2px solid #3770FF;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: devf_font;
-    /* font-weight: 900; */
-
-    border-radius: 4px;
-    cursor: pointer;
-
-<<<<<<< HEAD
+    padding: 5px;
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    background-color: #2368FB;
+    border: none;
+    border-radius: 8px;
+cursor: pointer;
+color: #FFF;
 }
 
+
+.partner-button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+
+/* 
 .partner-button button:hover {
-=======
-/* .partner-button button:hover{
->>>>>>> 022011381ec5c1d1e23834a4853a2e30008522f8
     color: #1E1E41;
     background-color: #fff;
 } */
 
-.hero .row .left-sec .btns img {
-    width: 160px;
-    margin: 10px;
-    padding: 3px 5px;
-    border: 2px solid;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
+
 
 
 
@@ -899,13 +875,8 @@ body {
 }
 
 /* ************sponsers******************************** */
-<<<<<<< HEAD
 .Partners .sp-row p {
     font-family: sans-serif;
-=======
-.Partners .sp-row p{
-    font-family: poppins;
->>>>>>> 022011381ec5c1d1e23834a4853a2e30008522f8
     color: #FFF;
     width: 70%;
     font-size: 1.5rem;
@@ -1632,4 +1603,4 @@ footer .text-center img {
     footer .text-center h1 {
         font-size: 1rem;
     }
-}
+} 
