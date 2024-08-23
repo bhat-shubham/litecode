@@ -993,15 +993,6 @@ ul li a:hover {
     height: 30px;
     margin: 10px;
   }
-  footer .text-center img:hover{
-    
-  }
-  
-  
-  
- 
-  
-
   @media screen and (max-width: 1200px) {
     .hero .row .left-sec h1 {
         font-size: 3rem;
