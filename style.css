@@ -228,7 +228,7 @@ body {
     font-size: 2rem;
     color: #00D8ED;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 5px 0;
     font-family: poppins;
 
 }
@@ -240,24 +240,26 @@ body {
 }
 
 .hero .row .left-sec .location {
-
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFF;
-    font-family: Anek Devanagari;
+    font-family: poppins;
     color: #fff;
     font-size: 20px;
 
 }
 
 .hero .row .left-sec .location img {
-    width: 30px;
+    width: 25px;
+    /* padding: 5px; */
 
 }
 
 .hero .row .left-sec .location p {
-    margin-top: 8px;
+    /* margin-top: 8px; */
+    font-family: poppins;
 
 }
 
@@ -268,7 +270,7 @@ body {
 
 
 .hero .row .left-sec .btns {
-    gap: 15px;
+    gap: 55px;
     display: flex;
 
     align-items: center;
@@ -280,17 +282,19 @@ body {
 }
 .partner-button button {
     display: flex;
+    font-family: POPPINS;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    width: 160px;
+    /* padding: 5px; */
+    width: 300px;
     height: 40px;
-    padding: 5px;
+    font-size: 15px;
+    /* padding: 5px; */
     background-color: #2368FB;
     border: none;
     border-radius: 8px;
-cursor: pointer;
-color: #FFF;
+    cursor: pointer;
+    color: #FFF;
 }
 
 
@@ -1104,9 +1108,15 @@ footer .text-center img {
     .hero .row .left-sec .location {
         font-size: 18px;
     }
+    .hero .row .left-sec .btns {
+        flex-direction: column;
+        gap: 25px;
+
+    }
+
 
     .hero .row .left-sec .btns img {
-        width: 130px;
+        width: 20px;
     }
 
     .about .about-group .right-sec {
