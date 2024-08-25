@@ -93,12 +93,14 @@ body {
     justify-content: space-between;
    
     padding: 0 15px;
-   z-index: 1;
-    border: 2px solid black;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
 }
 
-.side-navbar,
-.link-container{
+.side-navbar,.link-container{
     display: none;
 }
 
@@ -328,9 +330,7 @@ body {
     width: 90%;
     height: 70vh;
     margin: 0 auto;
-
     background-size: cover;
-
     background-repeat: no-repeat;
     background-image: url(img/aboutbg.webp);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -432,7 +432,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: 27%;
-    height: 13em;
+    height: 12em;
     margin: 16px 12px;
     padding: 10px;
     background-position: center;
@@ -471,12 +471,12 @@ body {
 
 .card-container .track-card::before {
     content: '';
-    background-image: conic-gradient(#3bb4fe 51deg, transparent 22deg);
+    background-image: conic-gradient(#4F378F 51deg, transparent 22deg);
     width: 100%;
     height: 160%;
     position: absolute;
     border-radius: 15px;
-    animation: rotate 3s linear infinite;
+    animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
@@ -888,7 +888,7 @@ body {
 
 /* ************sponsers******************************** */
 .Partners .sp-row p {
-    font-family: sans-serif;
+    font-family: poppins;
     color: #FFF;
     width: 70%;
     font-size: 1.5rem;
@@ -1406,12 +1406,32 @@ footer .text-center img {
         padding: 20px 0px;
     }
 
+  
+
+
+    .side-navbar{
+        display: flex;
+        position: fixed;
+    }
+
+  
+    #menu-bar{
+        margin-left: 110px;
+    }
 
     .side-navbar .logo{
         display: flex;
         width: 50%;
         padding:5px;
     }
+    #open-menu:checked ~ .overlay{
+       
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+       }
     
     .side-navbar .logo .side-navbar-logo{
         width: 45px;
@@ -1438,10 +1458,10 @@ footer .text-center img {
     }
     .link-container{
        display: flex;
-        flex-direction: column;
-        position: fixed;
+    flex-direction: column;
+    position: fixed;
         top: 0;
-        right: -371px;
+        right:-100%;
         
         width: 290px;
         height: 100vh;
@@ -1450,7 +1470,8 @@ footer .text-center img {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
       padding: 20px 10px;
-      transition: 1s;
+      transition: 0.5s ease-in-out;
+      z-index: 15;
     }
 
     #open-menu:checked ~ .link-container{
