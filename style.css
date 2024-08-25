@@ -1483,13 +1483,19 @@ footer .text-center img {
     .hero .row .left-sec {
         box-shadow: none;
         backdrop-filter: blur(10px);
-        border: none;
+        /* border: none; */
         padding: 5px;
 
     }
 
     .hero .row .left-sec h1 {
-        font-size: 3.7rem;
+        height: 80px;
+
+        margin: 0px;
+
+        letter-spacing: 5px;
+
+        font-size: 2.7rem;
 
     }
 
@@ -1498,16 +1504,16 @@ footer .text-center img {
     }
 
     .hero .row .left-sec p {
-        font-size: 22px;
+        /* font-size: 22px; */
     }
 
     .hero .row .left-sec .btns img {
-        width: 165px;
+        width: 20px;
     }
 
 
     .hero .row .left-sec .btns button {
-        width: 165px;
+        width: 265px;
     }
 
     .partner-button button {
@@ -1515,7 +1521,7 @@ footer .text-center img {
 
 
         color: #26234E;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 500;
 
     }
