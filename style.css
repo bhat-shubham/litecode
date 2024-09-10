@@ -236,12 +236,13 @@ body {
 }
 
 .hero .row .left-sec p {
-    font-family: Anek Devanagari;
+    font-family: poppins;
     color: #fff;
     font-size: 20px;
 }
 .launchtime div span{
-    padding: 20px;
+    padding: 25px;
+    padding-bottom: 15px;
     /* background-color: #0e3742; */
     border-radius: 20px;
     font-family: poppins;
