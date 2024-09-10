@@ -105,6 +105,25 @@
                     <p> PDEA's College of Engineering,Pune</p>
 
                 </div>
+                <div class="launchtime">
+                    <div>
+                        <span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div>
+                        <span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div>
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div>
+                        <span id="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+
+                </div>
 
 
                 <div class="btns sec-margin">
@@ -708,6 +727,26 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        var countDownDate = new Date("Oct 19, 2024 00:00:00").getTime();
+        var x =setInterval(function(){
+            var now= new Date().getTime();
+            var distance = countDownDate - now;  
+            var days = Math.floor(distance / (1000 * 60  * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60  * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60  * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML= days;
+            document.getElementById("hours").innerHTML= hours;
+            document.getElementById("minutes").innerHTML= minutes;
+            document.getElementById("seconds").innerHTML= seconds;
+
+
+
+
+        },1000);
+    </script>
 
 </body>
 

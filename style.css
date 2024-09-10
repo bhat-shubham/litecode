@@ -240,7 +240,20 @@ body {
     color: #fff;
     font-size: 20px;
 }
-
+.launchtime div span{
+    padding: 20px;
+    /* background-color: #0e3742; */
+    border-radius: 20px;
+    font-family: poppins;
+    font-size: 50px;
+    color: #00D8ED;
+}
+.launchtime div{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    box-shadow: 0 1px 10px #08CBFF;
+    /* background-color: #1f1313; */
+}
 .hero .row .left-sec .location {
     margin-top: 15px;
     display: flex;
@@ -269,7 +282,12 @@ body {
     display: flex;
     align-items: center;
 }
-
+.launchtime{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    /* flex-basis: 100px; */
+}
 
 .hero .row .left-sec .btns {
     gap: 55px;
