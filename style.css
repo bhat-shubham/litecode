@@ -242,7 +242,9 @@ body {
 }
 .launchtime div span{
     padding: 25px;
-    padding-bottom: 15px;
+    /* margin-top: 10px; */
+    /* height:max-content; */
+    /* padding-bottom: 15px; */
     /* background-color: #0e3742; */
     border-radius: 20px;
     font-family: poppins;
@@ -250,6 +252,7 @@ body {
     color: #00D8ED;
 }
 .launchtime div{
+    padding: 5px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 7px;
     box-shadow: 0 1px 10px #08CBFF;
@@ -1588,6 +1591,9 @@ footer .text-center img {
     }
     .user{
         animation: none;
+    }
+    .launchtime div span{
+        font-size: 30px;
     }
 
     .card-container .track-card {
