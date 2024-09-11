@@ -1586,14 +1586,19 @@ footer .text-center img {
         display: flex;
 
     }
+    .user{
+        animation: none;
+    }
 
     .card-container .track-card {
+        animation: none;
         width: 46%;
 
         height: 10em;
     }
 
     .card-container .track-card::after {
+        animation: none;
         border: 5px solid #48297f ;
         content: "";
         width: 85%;
@@ -1608,6 +1613,7 @@ footer .text-center img {
     }
 
     .card-container .track-card {
+        animation: none;
         margin: 20px 6px;
     }
 
@@ -1650,6 +1656,11 @@ footer .text-center img {
     .FAQ {
         margin-bottom: 90px;
     }
+    .team .team-row .user:hover {
+        scale: 1;
+        transition:none;
+    }
+    
 
     .faq-box {
         padding: 20px 10;
@@ -1669,8 +1680,8 @@ footer .text-center img {
 
     }
     .team .team-row .user img:hover {
-        /* scale: 1; */
-        transition:none
+        scale: 1;
+        transition:none;
     }
 
 
