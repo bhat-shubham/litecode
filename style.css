@@ -1578,6 +1578,7 @@ footer .text-center img {
     }
 
     .partner-button button {
+        margin-bottom: 10px;
         padding: 6px 4px;
 
 
@@ -1611,9 +1612,10 @@ footer .text-center img {
         animation: none;
     }
     .launchtime div span{
-        font-size: 30px;
-    }
+        padding: 0px;
 
+        font-size: 20px;
+    }
     .card-container .track-card {
         animation: none;
         width: 100%;
@@ -1699,8 +1701,8 @@ footer .text-center img {
 
     .team .team-row .user {
         height: auto;
-        font-size: 12px;
-        width: 145px;
+        font-size: 10px;
+        width: 134px;
     }
 
     .team .team-row .row3 {
@@ -1709,7 +1711,7 @@ footer .text-center img {
 
     .team .team-row .user img {
         margin: 0;
-        width: 130px;
+        width: 120px;
 
     }
     .team .team-row .user img:hover {
