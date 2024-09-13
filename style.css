@@ -1616,16 +1616,18 @@ footer .text-center img {
 
     .card-container .track-card {
         animation: none;
-        width: 46%;
+        width: 100%;
 
-        height: 10em;
+        height:8.5em;
     }
 
     .card-container .track-card::after {
         animation: none;
-        border: 5px solid #48297f ;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 1px 10px #08CBFF;
         content: "";
-        width: 85%;
+        /* width:100%; */
     }
     .card-container .track-card::before {
         animation: none;
@@ -1633,15 +1635,20 @@ footer .text-center img {
 
 
     .card-container {
+        display: flex;
+        justify-content: center;
         padding: 0;
     }
 
     .card-container .track-card {
         animation: none;
-        margin: 20px 6px;
+        /* margin: 20px 6px; */
     }
 
     .track-title {
+        /* backdrop-filter: none; */
+        width: fit-content;
+        border-radius: 20px;
         font-size: 0.83rem;
     }
 
@@ -1658,7 +1665,7 @@ footer .text-center img {
 
     }
     .Partners .sp-row p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 100%;
     }
     .prize-container .prize-text {
@@ -1691,7 +1698,9 @@ footer .text-center img {
     }
 
     .team .team-row .user {
-        width: 163px;
+        height: auto;
+        font-size: 12px;
+        width: 145px;
     }
 
     .team .team-row .row3 {
@@ -1700,12 +1709,15 @@ footer .text-center img {
 
     .team .team-row .user img {
         margin: 0;
-        width: 150px;
+        width: 130px;
 
     }
     .team .team-row .user img:hover {
         scale: 1;
         transition:none;
+    }
+    .Partners{
+        margin: auto;
     }
 
 
