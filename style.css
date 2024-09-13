@@ -451,12 +451,13 @@ body {
 .track-container {
     background-image: url(img/trackbg.webp);
     justify-content: center;
-    height: auto;
+    height: 70vh;
 
 }
 
 .card-container {
-    padding: 15px;
+    /* padding: 55px; */
+    gap: 30px;
     height: auto;
     width: 80%;
     display: flex;
@@ -550,14 +551,14 @@ body {
 }
 
 .card-container .track-card:nth-child(2)::after {
-    background-image: url(img/devops.webp);
-}
-
-.card-container .track-card:nth-child(3)::after {
     background-image: url(img/blochchain.webp);
 }
 
-.card-container .track-card:nth-child(4)::after {
+.card-container .track-card:nth-child(3)::after {
+    background-image: url(img/opentrophy.webp);
+}
+
+/* .card-container .track-card:nth-child(4)::after {
     background-image: url(img/webdev_bg.webp);
 }
 
@@ -568,7 +569,7 @@ body {
 .card-container .track-card:nth-child(6)::after {
     background-image: url(img/opentrophy.webp);
 }
-
+ */
 
 
 .track-container .planet-container {
@@ -576,7 +577,7 @@ body {
 }
 
 .track-container .planet-container img {
-    width: 426px;
+    width: 526px;
     animation: roll 25s linear infinite;
 
 }
