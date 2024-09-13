@@ -293,6 +293,9 @@ body {
     margin-top: 15px;
     /* flex-basis: 100px; */
 }
+.span-txt{
+    color: #08CBFF;
+}
 
 .hero .row .left-sec .btns {
     gap: 55px;
