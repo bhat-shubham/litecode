@@ -1235,8 +1235,8 @@ footer .text-center img {
     }
 
     .about .about-group img,
-    .track .trackimg im {
-        display: none;
+    .track .trackimg img {
+        /* display: none; */
         /* font: ; */
     }
 
@@ -1593,8 +1593,11 @@ footer .text-center img {
 
 
     .about .about-group {
-        background-image: url(img/aboutbgmobile.jpg);
+        background-image: url(img/aboutbg.webp);
         height: auto;
+    }
+    .about .about-group img{
+        display: none;
     }
 
     .about .about-group .right-sec h1 {
@@ -1602,7 +1605,7 @@ footer .text-center img {
     }
 
     .about .about-group .right-sec p {
-        font-size: 13px;
+        /* font-size: 13px; */
     }
 
     .cardcontainer {
