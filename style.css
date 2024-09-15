@@ -52,6 +52,74 @@ body {
     font-family: PRIZES;
     src: url(font/CuriousTrackDemoRegular.ttf);
 }
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #111;
+    z-index: 999;
+  }
+
+#loader:before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #2a9d8f;
+    animation: loading-bounce 0.5s ease-in-out infinite alternate;
+  }
+
+  /* #loader:after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 7px;
+    width: 45px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+    animation: loading-step 1s ease-in-out infinite;
+  }
+   */
+  @keyframes loading-bounce {
+    0% {
+      transform: scale(1, 0.7);
+    }
+
+    40% {
+      transform: scale(0.8, 1.2);
+    }
+
+    60% {
+      transform: scale(1, 1);
+    }
+
+    100% {
+      bottom: 140px;
+    }
+  }
+
+  @keyframes loading-step {
+    0% {
+      box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+              0 10px 0 #f2f2f2,
+              -35px 50px 0 #f2f2f2,
+              -70px 90px 0 #f2f2f2;
+    }
+
+    100% {
+      box-shadow: 0 10px 0 #f2f2f2,
+              -35px 50px 0 #f2f2f2,
+              -70px 90px 0 #f2f2f2,
+              -70px 90px 0 rgba(0, 0, 0, 0);
+    }
+  }
 
 .section {
     width: 100%;
@@ -163,7 +231,7 @@ body {
     align-items: center;
     height: 75vh;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 80px 20px;
     flex-wrap: wrap;
 }
 
@@ -179,7 +247,12 @@ body {
 
 
 }
-
+.hero-astro{
+    height: 40vh;
+    position: absolute;
+    margin-top: -50vh;
+    margin-left: 95vh;
+}
 .hero .row .left-sec h1 { 
     height: 100px;
     font-size: 5rem;
@@ -383,10 +456,18 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 20px;
 }
-.about .about-group img {
+/* .about .about-group img {
     height: 110%;
     margin-left: -200px;
     animation: roll 25s linear infinite;
+} */
+.about-astro{
+    height: 45vh;
+    position: absolute;
+    animation: down 4s infinite ease-in-out;
+    margin-left: 54vw;
+    margin-top: 40vh;
+
 }
 @keyframes roll {
     0% {
@@ -444,6 +525,12 @@ body {
 .about .about-group .right-sec .info .date {
     color: #fff;
 }
+.about-planet{
+    height: 110%;
+    margin-left: -200px;
+    animation: roll 25s linear infinite;
+
+}
 
 /* **********************Tracks*******************************/
 .trackssection {
@@ -459,7 +546,7 @@ body {
 }
 
 .card-container {
-    /* padding: 55px; */
+    padding: 35px;
     gap: 30px;
     height: auto;
     width: 80%;
@@ -470,30 +557,54 @@ body {
 
 .card-container .track-card {
     /* background-color: #fcfcfc; */
+    position: relative;
+    width: 300px;
+    height: 200px;
+    /* background-color: #f2f2f2; */
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 27%;
-    height: 12em;
-    margin: 16px 12px;
-    padding: 10px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    position: relative;
     overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.tracks_asteroid{
+    position: absolute;
+    /* top: 20vh; */
+    /* left: 20vw; */
+    /* z-index: 10; */
+    height: 15vh;
+    animation:revolving 25s linear infinite;
+    will-change:transform;
 
-.card-container .track-card h2 {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    color: #ffffff;
-    top: 0;
-    left: 0;
-    z-index: 1;
+}
+@keyframes revolving{
+    0% {
+        /* transform: translate(80vh,80vw); */
+        transform: translate(1vh,1vw);
+    }
+      50% {
+        transform: translate(60vh,80vw);
+        /* transform: translate(-50%,-50%); */
+      }
+    100%{
+        transform: translate(10px,10px);
+    }
+    }
+.card-container .card h2 {
+    color: #fff;
+    font-family:montserrt;
+    /* width: 60%; */
+    max-width:110%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
 }
 
 .track-title {
@@ -512,7 +623,7 @@ body {
 
 }
 
-.card-container .track-card::before {
+/* .card-container .track-card::before {
     content: '';
     background-image: conic-gradient(#4F378F 51deg, transparent 22deg);
     width: 100%;
@@ -520,7 +631,7 @@ body {
     position: absolute;
     border-radius: 15px;
     animation: rotate 10s linear infinite;
-}
+} */
 
 @keyframes rotate {
     0% {
@@ -531,9 +642,14 @@ body {
         transform: rotate(360deg);
     }
 }
+.track-astro{
+    position: absolute;
+    height: 50vh;
+    margin-left: -10vw;
+    margin-top:72vh;
+}
 
-
-.card-container .track-card::after {
+/* .card-container .track-card::after {
     content: "";
     width: 89%;
     height: 96%;
@@ -547,17 +663,82 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-}
+} */
+.card {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 280px;
+    height: 200px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 1px 10px #08CBFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    perspective: 1000px;
+    
+    /* box-shadow: 0 0 0 5px #ffffff80; */
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
 
-.card-container .track-card:nth-child(1)::after {
+    position: absolute;
+    /* background-color: #fff; */
+    backdrop-filter: blur(100px);
+        border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* background-color: #f2f2f2; */
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    color: #08CBFF;
+    font-family: poppins;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    /* color: #fff; */
+    font-weight: 0;
+  }
+  .card__description {
+    font-family: poppins;
+    margin: 5px 0 0;
+    font-size: 14px;
+    color:#fff;
+    line-height: 1.4;
+  }
+  
+
+.card-container .card:nth-child(2){
     background-image: url(img/genai.webp);
 }
 
-.card-container .track-card:nth-child(2)::after {
+.card-container .card:nth-child(3){
     background-image: url(img/blochchain.webp);
 }
 
-.card-container .track-card:nth-child(3)::after {
+.card-container .card:nth-child(4){
     background-image: url(img/opentrophy.webp);
 }
 
@@ -1215,6 +1396,9 @@ footer .text-center img {
     .hero .row {
         flex-direction: column;
     }
+    .hero-astro{
+        display: none;
+    }
 
     .trackss img {
         display: none;
@@ -1263,6 +1447,9 @@ footer .text-center img {
     .trackss {
         height: 50vh;
     }
+    .hero-astro{
+        display: none;
+    }
 
     .cardcontainer {
         width: 65%;
@@ -1276,6 +1463,9 @@ footer .text-center img {
     .hero-logo img {
         width: 30px;
         height: 30px;
+    }
+    .hero-astro{
+        display: none;
     }
 
     .hero {
@@ -1361,6 +1551,9 @@ footer .text-center img {
         display: flex;
         flex-direction: row;
     }
+    .hero-astro{
+        display: none;
+    }
 
     .trackss img {
         width: 80px;
@@ -1384,6 +1577,9 @@ footer .text-center img {
     .track-container {
         padding: 10px;
     }
+    .hero-astro{
+        display: none;
+    }
 
     .trackss img {
         width: 60px;
@@ -1399,6 +1595,9 @@ footer .text-center img {
 
         display: none;
 
+    }
+    .hero-astro{
+        display: none;
     }
 
     .card h2 {
@@ -1447,6 +1646,9 @@ footer .text-center img {
     }
     .section {
         padding: 20px 0px;
+    }
+    .hero-astro{
+        display: none;
     }
 
   

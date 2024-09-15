@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <body onload="hideLoader()">
+        <div id="loader">
+     
+        </div>
     <div class="side-navbar">
         <div class="logo">
           <div class="side-navbar-logo">
@@ -49,6 +53,7 @@
   
 
     <section class="hero section">
+        <!-- <img class="rocketastro" src="/img/1 asteroid.png"> -->
         
         <nav class="navbar">
 
@@ -147,7 +152,11 @@
 
 
             </div>
+            <img class="hero-astro" src="/img/Astronaut with space shuttle (1).gif">
+
+            
     </section>
+    
 
     <section class="about section" id="ABOUT">
 
@@ -155,7 +164,9 @@
             <h1>ABOUT <span class="span-txt">US</span></h1>
         </div>
         <div class="about-group">
-            <img src="img/mars.webp" alt="" class="planet_roll" loading="lazy">
+            <img class="about-planet" src="img/mars.webp" alt="" loading="lazy">
+            <img class="about-astro" src="/img/about-planet1.png">
+
             <div class="right-sec">
                 <div class="upper-box">
 
@@ -201,14 +212,41 @@
             <h1>Tracks</h1>
 
         </div>
-        <div class="track-container" loading="lazy">
+                <div class="track-container" loading="lazy">
+            
+
             <div class="card-container">
+                <img class="track-astro" src="img/astro-tracks.png">
+                <div class="card">
+                    <h2>Gen AI</h2>
+                    <div class="card__content">
+                        
+                      <p class="card__title">Gen AI</p>
+                      <p class="card__description">Explore the future of artificial intelligence. Create innovative applications that leverage the power of generative AI. Push the boundaries of creativity and automation.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <h2>Web 3</h2>
+                    <div class="card__content">
+                      <p class="card__title">Web 3</p>
+                      <p class="card__description">Be a pioneer in the Web3 revolution. Build cutting-edge applications that harness the power of blockchain technology. Create decentralized solutions that redefine how we interact with the digital world.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <h2>Open Innovation</h2>
+                    <div class="card__content">
+                      <p class="card__title">Open Innovation</p>
+                      <p class="card__description">Break free from traditional boundaries. Collaborate with diverse teams and explore innovative ideas. Foster a culture of open innovation and create solutions that challenge the status quo.</p>
+                    </div>
+                  </div>
+                  
+
                 
-                <div class="track-card">
+                <!-- <div class="track-card">
                     <div class="track-title">
                         <h2>GenAI</h2>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="track-card">
                     <div class="track-title">
                         <h2>Devops and Cloud</h2>
@@ -226,7 +264,7 @@
                     </div>
 
                 </div> -->
-                <div class="track-card">
+                <!-- <div class="track-card">
                     <div class="track-title">
                         <h2>Web3</h2>
                     </div>
@@ -237,7 +275,7 @@
                         <h2>Open Innovation</h2>
                     </div>
 
-                </div>
+                </div> -->
             </div>
             <div class="planet-container">
                 <img src="img/venus.webp" alt="" loading="lazy">
