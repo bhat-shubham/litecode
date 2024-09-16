@@ -1830,6 +1830,9 @@ footer .text-center img {
 
         height:8.5em;
     }
+    .card{
+        height: 20vh;
+    }
 
     .card-container .track-card::after {
         animation: none;
@@ -1860,6 +1863,9 @@ footer .text-center img {
         width: fit-content;
         border-radius: 20px;
         font-size: 0.83rem;
+    }
+    .track-astro{
+        display: none;
     }
 
 
