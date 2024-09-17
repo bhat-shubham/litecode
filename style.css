@@ -1651,6 +1651,9 @@ footer .text-center img {
     body{
         background-image: url(img/bg-mobile.jpg);
     }
+    #loader img{
+        width: 100%;
+    }
     .section {
         padding: 20px 0px;
     }
