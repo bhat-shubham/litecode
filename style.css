@@ -56,12 +56,19 @@ body {
     position: fixed;
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
-    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+    background-color: #000;
     z-index: 999;
   }
+  #loader img{
+    width: 20%;
+    height: 20%;
+  }
 
-#loader:before {
+/* #loader:before {
     content: "";
     position: absolute;
     bottom: 50%;
@@ -72,7 +79,7 @@ body {
     border-radius: 50%;
     background: #2a9d8f;
     animation: loading-bounce 0.5s ease-in-out infinite alternate;
-  }
+  } */
 
   /* #loader:after {
     content: "";
