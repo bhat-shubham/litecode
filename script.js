@@ -23,9 +23,9 @@ faqBoxes.forEach(faqBox => {
 });
 var loaderElement = document.getElementById("loader");
 
-function hideLoader() {
-  loaderElement.style.display = "none";
-}
-// setTimeout(function()  {
-//   loaderElement.style.display="none";
-// },5000);
+// function hideLoader() {
+//   loaderElement.style.display = "none";
+// }
+setTimeout(function()  {
+  loaderElement.style.display="none";
+},5000);

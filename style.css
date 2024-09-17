@@ -587,6 +587,14 @@ body {
     will-change:transform;
 
 }
+.hanging{
+    height:33vh;
+    z-index: 1;
+    margin-top: 15vh;
+    margin-left: 80vw;
+    position: absolute;
+    animation: down 8s linear infinite;
+}
 @keyframes revolving{
     0% {
         /* transform: translate(80vh,80vw); */
@@ -827,20 +835,20 @@ body {
     padding: 5px 25px;
     background-image: none;
     flex-wrap: wrap;
-    background-image: url(img/prizesbgf.webp);
+    background-image: url(img/prizesbgf.png);
     background-size: cover;
     background-position: center;
 
 }
 
 .prize-container .prize-text {
-    animation: down 4s infinite ease-in-out;
+    /* animation: down 4s infinite ease-in-out; */
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 50%;
-    justify-content: center;
+    /* justify-content: center; */
     font-family: aquirebold;
 
 }
@@ -857,10 +865,11 @@ body {
 }
 
 .prize-container .prize-text h4 {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.5rem;
+    /* text-align: center; */
 
     font-weight: 900;
+    margin-top: 20px;
     color: #FF8C00;
 }
 
@@ -1652,7 +1661,7 @@ footer .text-center img {
         background-image: url(img/bg-mobile.jpg);
     }
     #loader img{
-        width: 100%;
+        width: 70%;
     }
     .section {
         padding: 20px 0px;
@@ -1873,6 +1882,9 @@ footer .text-center img {
         width: fit-content;
         border-radius: 20px;
         font-size: 0.83rem;
+    }
+    .hanging{
+        display: none;
     }
     .track-astro{
         display: none;
