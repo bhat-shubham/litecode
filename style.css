@@ -1558,13 +1558,83 @@ footer .text-center img {
     }
 
 }
-/* @media (min-width: 1366px) and (max-width: 1440px){
+@media (max-width: 1366px) and (min-width: 1280px){
+    .hero .row .left-sec {
+        /* height: 70vh; */
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 1px 10px #08CBFF;
+        text-align: center;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        /* line-height: 1; */
+    
+    
+    }
     .hero-astro {
-        height: 33vh;
-        left: 10vw;
+        height: 45vh;
+        /* display: none; */
+        left:25vw;
+    }
+    .hero .row .left-sec h1{
+        height: 90px;
+        /* font-size: 5rem; */
+        letter-spacing: 10px;
+        font-family: aquirebold;
+        margin: 0 50px;
+        color: #0AB5D2;
+        text-shadow: 1px 0px 10px #bb14e0;
+        animation: glow1 8s infinite;
+        font-size: 4.5rem;
+    }
+    .hero .row {
+        padding: 25px 20px;
+    }
+    .launchtime div span{
+         font-size: 40px;
+    }
+    .hero .row .left-sec .running-txt{
+        font-size: 1.7rem;
+    }
+    .about .about-group .right-sec p {
+        font-size: 17px;
+    }
+    .about .about-group .right-sec h1{
+            color: #fff;
+            font-size: 2rem;
+            /* font-family: acquirebold; */
+            margin-bottom: 4px;
+            margin-top: 30px;
+    }
+    .about .about-group .right-sec {
+        padding: 35px 0px;
+    }
+    .about-astro {
+        margin-left: 60vw;
+    }
+    .card{
+        width: 229px;
+    }
+    
+    .card-container .card h2 {
+        text-align: center;
+    }
+    .card__description {
+        font-size: 13px;
+        margin: 0px;
+    }
+    .track-container .planet-container img {
+        width: 431px;
+        margin-left: 40px;
+    }
+    .track-astro {
+        z-index: 1;
     }
 
-} */
+    
+
+}
 
 @media screen and (max-width: 992px) {
  
