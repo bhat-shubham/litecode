@@ -255,9 +255,9 @@ body {
 
 }
 .hero-astro{
-    height: 40vh;
+    height: 35vh;
     position: absolute;
-    margin-top: -50vh;
+    margin-top: -45vh;
     margin-left: 95vh;
 }
 .hero .row .left-sec h1 { 
