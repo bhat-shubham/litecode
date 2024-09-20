@@ -63,7 +63,7 @@ body {
     background-color: #000;
     z-index: 999;
   }
-  #loader img{
+  #loader video{
     width: 20%;
     height: 20%;
   }
@@ -263,19 +263,12 @@ body {
 .hero .row .left-sec h1 { 
     height: 100px;
     font-size: 5rem;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     font-family: aquirebold;
-    margin: 0 50px;
+    /* margin: 0 50px; */
     color: #0AB5D2;
-    text-shadow: 1px 0px 10px #bb14e0;
-    animation: glow1 8s infinite;}
-/* .first-txt{
-    margin: 0px 50px;
-    /* border-style: double; */
-    /* border-radius: 20px; */
-    /* backdrop-filter: blur(10px); */
-    /* height: 200px; */
-    /* animation: glow1 8s infinite; */
+    animation: glow1 8s infinite;
+}
 .sec-txt{
     font-family: prizes;
 }
