@@ -603,12 +603,12 @@ body {
     }
 .card-container .card h2 {
     color: #fff;
-    font-family:montserrt;
+    font-family:poppins;
     /* width: 60%; */
     max-width:110%;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 23px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     backdrop-filter: blur(20px);
@@ -1591,23 +1591,37 @@ footer .text-center img {
         font-size: 1.7rem;
     }
     .about .about-group .right-sec p {
-        font-size: 17px;
+        font-size: 13px;
     }
+
+ 
     .about .about-group .right-sec h1{
             color: #fff;
-            font-size: 2rem;
+            font-size: 1.7rem;
             /* font-family: acquirebold; */
-            margin-bottom: 4px;
-            margin-top: 30px;
+            /* margin-bottom: 4px;
+            margin-top: 30px; */margin: auto;
     }
     .about .about-group .right-sec {
-        padding: 35px 0px;
+        /* padding: 35px 0px; */
+        height: 100%;
+       
+    }
+
+    .about .about-group .right-sec .info h1{
+        font-size: 1.7rem;
+    }
+
+    .about .about-group .right-sec .info .title{
+        font-size: 15px;
     }
     .about-astro {
         margin-left: 60vw;
     }
-    .card{
-        width: 229px;
+    
+
+    .card-container .card {
+        width: 220px;
     }
     
     .card-container .card h2 {
@@ -1623,6 +1637,16 @@ footer .text-center img {
     }
     .track-astro {
         z-index: 1;
+    }
+
+    
+    footer .text-center h1 {
+        font-size: 1rem;
+    }
+
+    footer {
+       
+        line-height: 1;
     }
 
     
