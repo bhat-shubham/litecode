@@ -145,7 +145,6 @@ body {
     justify-content: center;
 
 }
-
 .txt-center {
     text-shadow: 1px 0px 10px #bb14e0;
     text-align: center;
@@ -1747,6 +1746,22 @@ footer .text-center img {
 
     .card img {
         height: 120px;
+    }
+    .hanging{
+        display: none;
+    }
+    .about .about-group img{
+        display: none;
+    }
+    .launchtime div span {
+        padding: 10px;
+        font-size: 35px;
+    }
+    .hero nav ul li a{
+        font-size: 11px;
+    }
+    .nav{
+        width: 100%;
     }
 }
 
