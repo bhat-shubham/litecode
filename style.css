@@ -1159,13 +1159,47 @@ body {
 }
 
 .sp-row .sp-detail .sp-list .sp-box {
-    background-color: #D3D3D3;
-    padding: 10px;
+    /* background-color:#fff ; */
+    backdrop-filter: blur(100px);
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
+    border-style: solid;
+    margin: 15px;
+    background-color: #dfda;
+}
+.sp-box1 {
+    border-style: solid;
+    background-color: #dfda;
+    /* backdrop-filter: blur(40px); */
+    padding: 6px;
     border-radius: 10px;
     width: 200px;
     margin: 15px;
 }
+.sp-box1 {
+    border-style: solid;
+   
+    padding: 6px;
+    border-radius: 10px;
+    width: 150px;
+    margin: 15px;
+}
+.sp-box3 {
 
+    padding: 6px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 15px;
+}
+.xyzimg{
+    height: 90px;
+    width: 150px;
+}
+#gmcimg{
+    width: 310px;
+    border-radius: 10px;
+}
 .sp-row .sp-detail .sp-list .sp-box img {
     width: 100%;
 }
@@ -1177,6 +1211,15 @@ body {
     margin-bottom: 10px;
     filter: drop-shadow(0px 0px 4px #c78c0b);
 }
+
+.Partners .sp-row .sp-detail .jainX img{
+    width:80px ;
+    height: 50px;
+}
+
+/* #jainX img{
+    width: 100%;
+} */
 
 
 
