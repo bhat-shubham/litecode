@@ -1163,7 +1163,7 @@ body {
     backdrop-filter: blur(100px);
     padding: 5px;
     border-radius: 10px;
-    width: 200px;
+    width: 165px;
     border-style: solid;
     margin: 15px;
     background-color: #dfda;
@@ -1212,9 +1212,9 @@ body {
     filter: drop-shadow(0px 0px 4px #c78c0b);
 }
 
-.Partners .sp-row .sp-detail .jainX img{
-    width:80px ;
-    height: 50px;
+.Partners .sp-row .sp-detail #jainX {
+    width:95px ;
+   
 }
 
 /* #jainX img{
