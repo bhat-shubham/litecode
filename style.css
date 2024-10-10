@@ -834,13 +834,13 @@ body {
 }
 
 .prize-container .prize-text {
-    /* animation: down 4s infinite ease-in-out; */
+   
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50%;
-    /* justify-content: center; */
+    height: 100%;
+    padding: 10px 0;
     font-family: aquirebold;
 
 }
@@ -865,14 +865,7 @@ body {
     color: #FF8C00;
 }
 
-/* .prize-container .price-txt h1 {
-    animation: glow 8s linear infinite;
-    padding: 0;
-    font-size: 6rem;
-    color: #B355C7;
-    letter-spacing: 2px;
-    font-family: PRIZES;
-} */
+
 @keyframes glow {
 
     0%,
@@ -912,7 +905,7 @@ body {
 
 
 .prize-container .prize-txt h4 {
-    /* padding-left: 100px; */
+  
     font-size: 3rem;
     text-align: center;
     font-family: aquirebold;
@@ -1216,12 +1209,6 @@ body {
     width:95px ;
    
 }
-
-/* #jainX img{
-    width: 100%;
-} */
-
-
 
 
 
@@ -1689,6 +1676,10 @@ footer .text-center img {
     footer {
        
         line-height: 1;
+    }
+
+    .prize-container .prize-txt h4{
+        margin-top: -77px;
     }
 
     
