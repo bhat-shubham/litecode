@@ -367,27 +367,70 @@ ul li a:hover {
    backdrop-filter: blur(7px);
 }
 
-.prize-container .price-txt {
-    width: 500px;
-    height: 400px;
-    margin-left: 55px;
+.prize-container .prize-text {
+   
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100%;
+    padding: 10px 0;
+    font-family: aquirebold;
 
 }
 
-.prize-container .price-txt h1 {
-    padding: 0;
-    font-size: 5rem;
-    color: #fff;
-    font-family: Helvetica;
+.prize-container .prize-text h1 {
+    animation: glow 8s linear infinite;
+    letter-spacing: 2px;
+    font-size: 6rem;
+
 }
-.span-txt{
-    color: #1DD8FE;
-    /* font-family: poppins; */
+
+.prize-container .prize-text h1 span {
+    font-family: PRIZES;
 }
+
+.prize-container .prize-text h4 {
+    font-size: 2.5rem;
+    /* text-align: center; */
+
+    font-weight: 900;
+    margin-top: 20px;
+    color: #FF8C00;
+}
+
+
+@keyframes glow {
+
+    0%,
+    40%,
+    61%,
+    70% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    15%,
+    41.5%,
+    61.2%,
+    90.1%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #B355C7,
+            0 0 20px #B355C7,
+            0 0 40px #B355C7,
+            0 0 80px #B355C7,
+            0 0 160px #B355C7;
+
+
+    }
+
+}
+
+.prize-container .price-txt h4 {
+    font-size: 3rem;
+}
+
 .prize-container .price-txt h1 span {
     padding: 0;
     margin-left: -25px;
@@ -401,7 +444,7 @@ ul li a:hover {
 }
 
 .prize-container .price-txt h4 {
-    /* padding-left: 100px; */
+  
     font-size: 3rem;
     text-align: center;
     font-family: monospace;
@@ -597,14 +640,50 @@ ul li a:hover {
     flex-wrap: wrap;
     margin: auto;
 }
-.sp-row .sp-detail .sp-list .sp-box{
-    background-color: #D3D3D3;
-    padding: 10px ;
+
+.sp-row .sp-detail .sp-list .sp-box {
+    /* background-color:#fff ; */
+    backdrop-filter: blur(100px);
+    padding: 5px;
+    border-radius: 10px;
+    width: 165px;
+    border-style: solid;
+    margin: 15px;
+    background-color: #dfda;
+}
+.sp-box1 {
+    border-style: solid;
+    background-color: #dfda;
+    /* backdrop-filter: blur(40px); */
+    padding: 6px;
     border-radius: 10px;
     width: 200px;
     margin: 15px;
 }
-.sp-row .sp-detail .sp-list .sp-box img{
+.sp-box1 {
+    border-style: solid;
+   
+    padding: 6px;
+    border-radius: 10px;
+    width: 150px;
+    margin: 15px;
+}
+.sp-box3 {
+
+    padding: 6px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 15px;
+}
+.xyzimg{
+    height: 90px;
+    width: 150px;
+}
+#gmcimg{
+    width: 310px;
+    border-radius: 10px;
+}
+.sp-row .sp-detail .sp-list .sp-box img {
     width: 100%;
 }
 
@@ -616,7 +695,10 @@ ul li a:hover {
     filter: drop-shadow(0px 0px 4px #c78c0b);
 }
 
-
+.Partners .sp-row .sp-detail #jainX {
+    width:95px ;
+   
+}
 
 
 
@@ -912,15 +994,38 @@ footer  ul li a img{
     .card img {
         height: 120px;
     }
-}
+    
+    .card-container .card h2 {
+        text-align: center;
+    }
+    .card__description {
+        font-size: 13px;
+        margin: 0px;
+    }
+    .track-container .planet-container img {
+        width: 431px;
+        margin-left: 40px;
+    }
+    .track-astro {
+        z-index: 1;
+    }
 
-@media screen and (max-width: 1200px) {
-  .trackss {
-      height: 50vh;
-  }
-  .cardcontainer {
-      width: 100%;
-  }
+    
+    footer .text-center h1 {
+        font-size: 1rem;
+    }
+
+    footer {
+       
+        line-height: 1;
+    }
+
+    .prize-container .prize-txt h4{
+        margin-top: -77px;
+    }
+
+    
+
 }
 
 @media screen and (max-width: 992px) {
