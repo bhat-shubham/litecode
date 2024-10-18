@@ -794,15 +794,49 @@ body {
 
 /* **************prize************************** */
 
-
+/* #download_div a{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+} */
+#download_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    font-size: 20vh;
+    /* margin-top: 7vh; */
+    border-radius: 20px;
+}
+#down_button{
+    /* max-width: fit-content; */
+    height:12vh;
+    font-size: 5vh;
+    border-radius: 15px;
+    padding: 5px;
+    width: 30vw;
+    border-style: dotted;
+    border-width: 2px;
+    color: #70161f;
+    border-color: #536976;
+    background-color: #7248D6;
+    font-family:"poppins";
+    font-weight: 900;
+}
+#down_button a{
+    color: #EBA6A9;
+    font-weight: 900;
+}
 .prize-container {
 
     width: 90%;
+    height: 98vh;
     justify-content: center;
     padding: 5px 25px;
     background-image: none;
     flex-wrap: wrap;
-    background-image: url(img/prizesbgf.png);
+    background-image: url(img/Your\ paragraph\ text.png);
     background-size: cover;
     background-position: center;
 
