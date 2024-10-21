@@ -824,6 +824,95 @@ body {
     font-family:"poppins";
     font-weight: 900;
 }
+.winners{
+    
+    width: 98%;
+
+    height: auto; 
+    margin: 10px;
+    
+   
+}
+
+.winners .winner-box{
+    backdrop-filter: blur(10px);
+
+    padding: 20px;
+
+    
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: 0 1px 10px #08CBFF;
+    border-radius: 10px;
+   
+}
+
+.winner-team {
+     width: 300px;
+     padding: 10px;
+     display: flex;
+     flex-wrap:wrap;
+     
+}
+.winner-team img:hover{
+    scale: 1.5;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+
+}
+.winner-team img {
+    
+     width: 100%;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     /* aspect-ratio: 16/9; */
+
+}
+
+.winners .winner-box .text-box{
+
+    width: 100%;
+    background-color: #7248D6;
+text-align: center;
+padding: 7px ;
+color: #291152;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+font-family: poppins;
+flex-wrap: wrap;
+}
+
+.winner-slide{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    padding: 5px;
+    width: 80%;
+     
+    margin: auto;
+}
+
+
+@media  (max-width: 450px){
+    .winners .winner-box .winner-slide{
+        width: 100%;
+    }
+
+    .winners   .winner-team{
+        width: 250px;
+       
+    }
+
+    .winners .winner-box .text-box{
+        font-size: 15px;
+    }
+
+    
+}
 #down_button a{
     color: #EBA6A9;
     font-weight: 900;
